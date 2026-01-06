@@ -1,0 +1,7 @@
+﻿main_Exo7.obj : error LNK2019: symbole externe non résolu AffTriangleAngleGH référencé dans la fonction main
+main_Exo7.obj : error LNK2019: symbole externe non résolu AffTriangleAngleGB référencé dans la fonction main
+main_Exo7.obj : error LNK2019: symbole externe non résolu AffTriangleAngleDH référencé dans la fonction main
+main_Exo7.obj : error LNK2019: symbole externe non résolu AffTriangleAngleDB référencé dans la fonction main
+main_Exo7.obj : error LNK2019: symbole externe non résolu AffParalleG référencé dans la fonction main
+main_Exo7.obj : error LNK2019: symbole externe non résolu AffParalleD référencé dans la fonction main
+C:\AOD\EXO_7\Exo_7\x64\Debug\Exo_7.exe : fatal error LNK1120: 6 externes non résolus
