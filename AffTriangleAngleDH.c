@@ -9,7 +9,7 @@ char AffTriangleAngleDH(char nbr)
 {
 	char Nbr_tour_etoile = nbr;
 	char Nbr_espace = nbr;
-	char Nbr_etoile_tot = 0;	//Nombre total d'étoile 
+	char Nbr_etoile_tot = 0;	//Nombre total d'Ã©toile 
 
 		 for (int Nbr_tour = 0; Nbr_tour < Nbr_espace; Nbr_tour++)
 		 {
@@ -18,9 +18,9 @@ char AffTriangleAngleDH(char nbr)
 				 printf(" ");	//Affichage de l'espacement
 			 }
 
-			 for (int Nbr_etoile = 0; Nbr_etoile < Nbr_tour_etoile; Nbr_etoile++)	//Calcul du nombre d'étoile
+			 for (int Nbr_etoile = 0; Nbr_etoile < Nbr_tour_etoile; Nbr_etoile++)	//Calcul du nombre d'Ã©toile
 			 {
-				 printf("*");	//Affichage des étoiles
+				 printf("*");	//Affichage des Ã©toiles
 				 Nbr_etoile_tot++;
 			 }
 			 printf("\n");
@@ -31,5 +31,5 @@ char AffTriangleAngleDH(char nbr)
 			 }
 		 }
 
-	return(Nbr_etoile_tot);		//Valeur total d'étoile renvoyé
+	return(Nbr_etoile_tot);		//Valeur total d'Ã©toile renvoyÃ©
 }
