@@ -17,7 +17,7 @@
 #include <ctype.h>
 #include "AffParalleG.h"
 
-unsigned char AffParalleG(const char* str)
+unsigned char AffParalleG_v2(const char* str)
 {
     int i, decalage, etoile, nombre, nbrEtoile;
 
@@ -31,7 +31,7 @@ unsigned char AffParalleG(const char* str)
         }
     }
 
-    nombre = atoi(str); //Conversion de la valeur char en int
+    nombre = atoi(str); // Conversion de la valeur char en int
 
     if (nombre >= 0 && nombre <= 15)
     {
