@@ -2,8 +2,8 @@
 //-----------------------------------------------------------------------------------//
 // Nom du projet 		: Exercice7
 // Nom du fichier 		: EXO7.h
-// Date de création 	: 16.12.2025
-// Date de modification : 16.12.2025
+// Date de crÃ©ation 	: 16.12.2025
+// Date de modification : 08.01.2026
 //
 // Auteur 				: AOD
 //
@@ -16,7 +16,7 @@
 #ifndef EXO7_H
 #define EXO7_H
 
-// Définition des differentes formes proposé
+// DÃ©finition des differentes formes proposÃ©
 #define FORME_A		65	// Forme A en ASCII
 #define FORME_a		97	// Forme a en ASCII
 #define FORME_B		66	// Forme B en ASCII
@@ -35,7 +35,6 @@ char AffTriangleAngleGH(char NbrStarFormeA);
 char AffTriangleAngleGB(char NbrStarFormeB);
 char AffTriangleAngleDH(char NbrStarFormeC);
 char AffTriangleAngleDB(char NbrStarFormeD);
-char AffParalleG(char NbrStarFormeF);
 char AffParalleD(char NbrStarFormeG);
 
 #endif
