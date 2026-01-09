@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <math.h>
+#include "EXO7.h"
+
 // prototype
 char AffTriangleAngleDB(char Nbr_Star);
 
 	// Description
-	//cette fonction affiche un triangle en bas à gauche
-    // et compte le nombre d'étoile total du triangle
+	//cette fonction affiche un triangle en bas Ã  gauche
+    // et compte le nombre d'Ã©toile total du triangle
     // 
 	// auteur : Allenbach Christophe et Espinosa Dilan 
 	char AffTriangleAngleDB(char Nbr_Star)
@@ -24,7 +26,7 @@ char AffTriangleAngleDB(char Nbr_Star);
             printf("%c", vide);
         }
 
-        // affichage des Étoiles
+        // affichage des Ã‰toiles
         for (j = 1; j <= i; j++)
         {
             printf("%c", etoile);
@@ -34,3 +36,4 @@ char AffTriangleAngleDB(char Nbr_Star);
     }
     return(total);
 }
+
