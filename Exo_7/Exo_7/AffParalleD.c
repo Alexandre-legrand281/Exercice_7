@@ -1,7 +1,7 @@
 //-----------------------------------------------------------------------------------//
 // Nom du projet 		: Exercice 7 - Fonctions
 // Nom du fichier 		: AffParalleD.c
-// Date de crÈation 	: 15.12.2025
+// Date de cr√©ation 	: 15.12.2025
 // Date de modification : xx.xx.20xx
 //
 // Auteur 				: Steeve.Pouly
@@ -9,29 +9,27 @@
 //
 // Version				: 0.1
 //
-// Description          : RÈalisation d'une fonction ayant pour but de reprÈsenter la mÍme image figurant dans le CDC dans le groupe G.
+// Description          : R√©alisation d'une fonction ayant pour but de repr√©senter la m√™me image figurant dans le CDC dans le groupe G.
 //
 //
 // Remarques :            lien pour la table ASCII :
 // 						  -> http://www.asciitable.com/
 // 						  lien pour la saisie de clavier avec getc & getchar pour ne pas
-//                        avoir des erreurs d'interprÈtation
+//                        avoir des erreurs d'interpr√©tation
 // 						  -> http://fr.openclassrooms.com/informatique/cours/utiliser-les-bonnes-fonctions-d-entree
-// 						  lien vers diffÈrents
+// 						  lien vers diff√©rents
 // 						  -> http://fr.wikipedia.org/wiki/String.h
 //----------------------------------------------------------------------------------//
 #include <stdio.h>
-
-#include "AffParalleD.h"
-
+#include "EXO7.h"
 
 // --fonction--//
 //---------------------------------------------------------------------------------//
 //-- nom fct : AffParalleD
-//--paramËtre entrÈe: nbE (short)
-//--paramËtre sortie: nbETot -> (char)
-//--paramËtre IN-OUT(pointeur): -
-//--description : afficher un losange avec des Ètoiles
+//--param√®tre entr√©e: nbE (short)
+//--param√®tre sortie: nbETot -> (char)
+//--param√®tre IN-OUT(pointeur): -
+//--description : afficher un losange avec des √©toiles
 //---------------------------------------------------------------------------------//
 
 unsigned char AffParalleD(short nbE)
@@ -43,12 +41,12 @@ unsigned char AffParalleD(short nbE)
 	short j2;
 	unsigned char nbETot = 0;
 
-	if (nbE <= 15)					//vÈrification des valeur d'entrÈes 0-15//
+	if (nbE <= 15)					//v√©rification des valeur d'entr√©es 0-15//
 	{
 		//-- Affichage des lignes --//
 		for (i = 0; i < nbE; i++)
 		{
-			NbEspaces = nbE - i - 1; //dÈgrÈmentation du nombre despace//
+			NbEspaces = nbE - i - 1; //d√©gr√©mentation du nombre despace//
 
 			//-- Afficher espace --//
 			for (j1 = 0; j1 < NbEspaces; j1++)
@@ -59,13 +57,13 @@ unsigned char AffParalleD(short nbE)
 			//-- Afficher Etoile  --//
 			for (j2 = 0; j2 < nbE; j2++)
 			{
-				printf("*");		//Affichage des Ètoiles//
+				printf("*");		//Affichage des √©toiles//
 			}
 
-			printf("\n");			//retour ‡ la ligne//
+			printf("\n");			//retour √† la ligne//
 		}	
 
-		nbETot = nbE * nbE;			//Retour du nombres d'Ètoiles affiche//
+		nbETot = nbE * nbE;			//Retour du nombres d'√©toiles affiche//
 	}
 
 	return nbETot;
