@@ -1,14 +1,14 @@
 //-----------------------------------------------------------------------------------//
 // Nom du projet 		: AffParalleG
 // Nom du fichier 		: AffParalleG.c
-// Date de création 	: 25.12.2025
+// Date de crÃ©ation 	: 25.12.2025
 // Date de modification : 25.12.2025
 //
 // Auteur 				: SVD et MBY
 //
 // Version				: 1.0
 //
-// Description          : parallèlogramme décaller à droite 
+// Description          : parallÃ¨logramme dÃ©caller Ã  droite 
 // Remarques :        
 //----------------------------------------------------------------------------------//
 
@@ -16,6 +16,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include "AffParalleG.h"
+#include "EXO7.h"
 
 unsigned char AffParalleG(unsigned char nombre)
 {
@@ -25,12 +26,12 @@ unsigned char AffParalleG(unsigned char nombre)
     {
         for (i = 0; i < nombre; i++)
         {
-            // Décalage vers la gauche
+            // DÃ©calage vers la gauche
             for (decalage = 0; decalage < i; decalage++)
             {
                 printf(" ");
             }
-            // Étoiles
+            // Ã‰toiles
             for (etoile = 0; etoile < nombre; etoile++)
             {
                 printf("*");
@@ -38,11 +39,12 @@ unsigned char AffParalleG(unsigned char nombre)
             printf("\n");
         }
         nbrEtoile = nombre * nombre;
-        return (nbrEtoile); // Succès
+        return (nbrEtoile); // SuccÃ¨s
     }
     else
     {
         printf("%d n'est pas une valeur comprise entre 0 et 15 !\n", nombre);
-        return 0; // Échec
+        return 0; // Ã‰chec
     }
+
 }
