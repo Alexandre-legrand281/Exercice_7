@@ -1,4 +1,5 @@
-﻿#include "AffTriangleAngleGB.h"
+#include "EXO7.h"
+#include "AffTriangleAngleGB.h"
 
 // Fonction qui permet d'afficher un triangle composé d'étoiles
 // Paramètres d'entrée :
