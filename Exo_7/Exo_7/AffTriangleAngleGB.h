@@ -1,3 +1,17 @@
+//-----------------------------------------------------------------------------------//
+// Nom du projet 	    	: AffTriangleAngleGB
+// Nom du fichier 		  : AffTriangleAngleGB.h
+// Date de création 	  : 09.01.26
+// Date de modification : 09.01.26
+//
+// Auteur 			       	: SSR
+//
+// Version				      : 1.0
+//
+// Description          : Triangle (groupe B)
+// Remarques :        
+//----------------------------------------------------------------------------------//
+
 #ifndef TRIANGLE_H
 #define TRIANGLE_H
 
