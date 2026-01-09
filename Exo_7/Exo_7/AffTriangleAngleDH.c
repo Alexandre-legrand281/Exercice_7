@@ -1,3 +1,15 @@
+//-----------------------------------------------------------------------------------//
+// Nom du projet 		: AffTriangleAngleDH
+// Nom du fichier 		: AffTriangleAngleDH.c
+// Date de création 	: 15.12.2025
+// Date de modification : 15.12.2025
+//
+// Auteur 				: Loïc Marmy, Luc Derré
+//
+// Version				: 0.1
+//
+// Description          : Code d'une fonction pour afficher des étoiles selon une configuration donnée
+//----------------------------------------------------------------------------------//
 #include "EXO7.h"
 #include <stdio.h>
 #include <stdint.h>
@@ -32,3 +44,4 @@ char AffTriangleAngleDH(char nbr)
 	return(Nbr_etoile_tot);		//Valeur total d'étoile renvoyé
 
 }
+
