@@ -1,8 +1,8 @@
 //-----------------------------------------------------------------------------------//
 // Nom du projet 		: Exercice7
 // Nom du fichier 		: main_Exo7.c
-// Date de création 	: 08.12.2025
-// Date de modification : 16.12.2025
+// Date de crÃ©ation 	: 08.12.2025
+// Date de modification : 08.01.2026
 //
 // Auteur 				: AOD
 //
@@ -19,20 +19,21 @@
 
 // Librairies Personnel
 #include "EXO7.h"
+#include "AffParalleG.h"
+#include "AffTriangleAngleGB.h"
 
 int main(void)
 {
-	//Déclarations des variables locales
+	//DÃ©clarations des variables locales
 	char NbrStar;
 	char Forme;
 	char Nettoyage;
 	short WriteNbrStar;
-	char NbrStarTot;
+	unsigned char NbrStarTot;
 
-	// Déclarations des constantes locales
+	// DÃ©clarations des constantes locales
 	const char NbrStarMax = 15;
 	const char NbrStarMin = 0;
-	const char CharMax = 127;
 
 	while (1)
 	{
@@ -42,7 +43,7 @@ int main(void)
 		WriteNbrStar = 0;
 		NbrStarTot = 0;
 
-		// Récéption du nombre d'étoiles
+		// RÃ©cÃ©ption du nombre d'Ã©toiles
 		printf("Combien d'etoiles souhaitez vous entre 0 et 15 (Tout autre charactere seras traduit par 0): ");
 		scanf("%3d", &WriteNbrStar);
 
@@ -67,10 +68,10 @@ int main(void)
 		}
 		else
 		{
-			// Récupération de la valeur ecrite
+			// RÃ©cupÃ©ration de la valeur ecrite
 			NbrStar = WriteNbrStar;
 
-			// Récéption de la forme désiré
+			// RÃ©cÃ©ption de la forme dÃ©sirÃ©
 			printf("Quel forme souhaitez vous entre la Forme A a G (la Forme E n'existe pas): ");
 			scanf_s("%c", &Forme);
 
@@ -80,42 +81,42 @@ int main(void)
 			// Reset de nettoyage
 			Nettoyage = 0;
 
-			// Affichage de la forme désiré
+			// Affichage de la forme dÃ©sirÃ©
 			switch (Forme)
 			{
 			case FORME_A:
 			case FORME_a:
-				// Affichage des étoiles sous la forme A
+				// Affichage des Ã©toiles sous la forme A
 				NbrStarTot = AffTriangleAngleGH(NbrStar);
 				break;
 
 			case FORME_B:
 			case FORME_b:
-				// Affichage des étoiles sous la forme B
+				// Affichage des Ã©toiles sous la forme B
 				NbrStarTot = AffTriangleAngleGB(NbrStar);
 				break;
 
 			case FORME_C:
 			case FORME_c:
-				// Affichage des étoiles sous la forme C
+				// Affichage des Ã©toiles sous la forme C
 				NbrStarTot = AffTriangleAngleDH(NbrStar);
 				break;
 
 			case FORME_D:
 			case FORME_d:
-				// Affichage des étoiles sous la forme D
-				 NbrStarTot = AffTriangleAngleDB(NbrStar);
+				// Affichage des Ã©toiles sous la forme D
+				NbrStarTot = AffTriangleAngleDB(NbrStar);
 				break;
 
 			case FORME_F:
 			case FORME_f:
-				// Affichage des étoiles sous la forme F
+				// Affichage des Ã©toiles sous la forme F
 				NbrStarTot = AffParalleG(NbrStar);
 				break;
 
 			case FORME_G:
 			case FORME_g:
-				// Affichage des étoiles sous la forme G
+				// Affichage des Ã©toiles sous la forme G
 				NbrStarTot = AffParalleD(NbrStar);
 				break;
 
@@ -125,7 +126,7 @@ int main(void)
 				break;
 			}
 
-			// Affichage de nombres d'étoiles affiché
+			// Affichage de nombres d'Ã©toiles affichÃ©
 			printf("Vous avez affiche au total %d etoiles \n", NbrStarTot);
 		}
 	}
